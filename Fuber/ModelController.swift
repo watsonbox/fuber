@@ -30,28 +30,38 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         pageData = dateFormatter.monthSymbols
     }
 
-    func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> DataViewController? {
+    func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> UIViewController? {
         // Return the data view controller for the given index.
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
 
-        // Create a new view controller and pass suitable data.
-        let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as DataViewController
-        dataViewController.dataObject = self.pageData[index]
-        return dataViewController
+        if (index == 0) {
+            // Create a home view controller
+            let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as HomeViewController
+            return homeViewController
+        } else {
+            // Create a new data view controller and pass suitable data.
+            let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as DataViewController
+            dataViewController.dataObject = self.pageData[index]
+            return dataViewController
+        }
     }
 
-    func indexOfViewController(viewController: DataViewController) -> Int {
+    func indexOfViewController(viewController: UIViewController) -> Int {
         // Return the index of the given data view controller.
         // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-        return self.pageData.indexOfObject(viewController.dataObject)
+        if (viewController is HomeViewController) {
+            return 0
+        } else {
+            return self.pageData.indexOfObject((viewController as DataViewController).dataObject)
+        }
     }
 
     // #pragma mark - Page View Controller Data Source
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as DataViewController)
+        var index = self.indexOfViewController(viewController)
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
@@ -61,7 +71,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as DataViewController)
+        var index = self.indexOfViewController(viewController)
         if index == NSNotFound {
             return nil
         }

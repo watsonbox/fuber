@@ -26,6 +26,10 @@
 		1EE5A4AC196ECB6500BC96BC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4AB196ECB6500BC96BC /* MobileCoreServices.framework */; };
 		1EE5A4AE196ECB6F00BC96BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4AD196ECB6F00BC96BC /* QuartzCore.framework */; };
 		1EE5A4B0196ECB7300BC96BC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4AF196ECB7300BC96BC /* Security.framework */; };
+		1EE5A4B5196ED19B00BC96BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5A4B4196ED19B00BC96BC /* HomeViewController.swift */; };
+		1EE5A4B7196ED78400BC96BC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4B6196ED78400BC96BC /* Social.framework */; };
+		1EE5A4B9196ED78F00BC96BC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4B8196ED78F00BC96BC /* Twitter.framework */; };
+		1EE5A4BB196ED79700BC96BC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4BA196ED79700BC96BC /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		1EE5A4AB196ECB6500BC96BC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1EE5A4AD196ECB6F00BC96BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1EE5A4AF196ECB7300BC96BC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1EE5A4B4196ED19B00BC96BC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1EE5A4B6196ED78400BC96BC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1EE5A4B8196ED78F00BC96BC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		1EE5A4BA196ED79700BC96BC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE5A4BB196ED79700BC96BC /* Accounts.framework in Frameworks */,
+				1EE5A4B9196ED78F00BC96BC /* Twitter.framework in Frameworks */,
+				1EE5A4B7196ED78400BC96BC /* Social.framework in Frameworks */,
 				1EE5A4B0196ECB7300BC96BC /* Security.framework in Frameworks */,
 				1EE5A4AE196ECB6F00BC96BC /* QuartzCore.framework in Frameworks */,
 				1EE5A4AC196ECB6500BC96BC /* MobileCoreServices.framework in Frameworks */,
@@ -121,6 +132,7 @@
 				1E83E518196E98A700AC88C7 /* RootViewController.swift */,
 				1E83E51A196E98A700AC88C7 /* DataViewController.swift */,
 				1E83E51C196E98A700AC88C7 /* ModelController.swift */,
+				1EE5A4B4196ED19B00BC96BC /* HomeViewController.swift */,
 				1E83E51E196E98A700AC88C7 /* Main.storyboard */,
 				1E83E521196E98A700AC88C7 /* Images.xcassets */,
 				1E83E514196E98A700AC88C7 /* Supporting Files */,
@@ -157,6 +169,9 @@
 		1EE5A4B1196ECBE700BC96BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EE5A4BA196ED79700BC96BC /* Accounts.framework */,
+				1EE5A4B8196ED78F00BC96BC /* Twitter.framework */,
+				1EE5A4B6196ED78400BC96BC /* Social.framework */,
 				1EE5A498196EC9FE00BC96BC /* Parse.framework */,
 				1EE5A49D196ECB0500BC96BC /* CFNetwork.framework */,
 				1EE5A49F196ECB2200BC96BC /* StoreKit.framework */,
@@ -272,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE5A4B5196ED19B00BC96BC /* HomeViewController.swift in Sources */,
 				1E83E519196E98A700AC88C7 /* RootViewController.swift in Sources */,
 				1E83E51D196E98A700AC88C7 /* ModelController.swift in Sources */,
 				1E83E51B196E98A700AC88C7 /* DataViewController.swift in Sources */,
