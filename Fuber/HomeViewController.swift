@@ -8,28 +8,43 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, PFLogInViewControllerDelegate {
+class HomeViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
 
+    var logInViewController = PFLogInViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Display Parse login view
-        var logInViewController = PFLogInViewController()
-        logInViewController.delegate = self
-        view.addSubview(logInViewController.view)
-        self.addChildViewController(logInViewController)
-        logInViewController.didMoveToParentViewController(self)
+        if (!PFUser.currentUser()) {
+            buildLoginView()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
+        super.viewDidAppear(animated)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func buildLoginView() {
+        logInViewController.delegate = self
+        
+        // Configure signup controller
+        var signUpViewController = PFSignUpViewController()
+        signUpViewController.delegate = self
+        logInViewController.signUpController = signUpViewController
+        
+        // Display Parse login view
+        view.addSubview(logInViewController.view)
+        self.addChildViewController(logInViewController)
+        logInViewController.didMoveToParentViewController(self)
+    }
+    
+    func showLogin(show : Bool = true) {
+        UIView.animateWithDuration(1, animations: { self.logInViewController.view.alpha = show ? 1 : 0 })
+    }
 
     /*
     // #pragma mark - Navigation
@@ -40,5 +55,8 @@ class HomeViewController: UIViewController, PFLogInViewControllerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func logInViewController(logInController: PFLogInViewController!, didLogInUser user: PFUser!) {
+        showLogin(show: false)
+    }
 }
