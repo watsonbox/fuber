@@ -15,6 +15,17 @@
 		1E83E522196E98A700AC88C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E83E521196E98A700AC88C7 /* Images.xcassets */; };
 		1E83E52E196E98A700AC88C7 /* FuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E52D196E98A700AC88C7 /* FuberTests.swift */; };
 		1EE5A497196EC07500BC96BC /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5A496196EC07500BC96BC /* Images */; };
+		1EE5A499196EC9FE00BC96BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A498196EC9FE00BC96BC /* Parse.framework */; };
+		1EE5A49E196ECB0500BC96BC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A49D196ECB0500BC96BC /* CFNetwork.framework */; };
+		1EE5A4A0196ECB2200BC96BC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A49F196ECB2200BC96BC /* StoreKit.framework */; };
+		1EE5A4A2196ECB3400BC96BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4A1196ECB3400BC96BC /* SystemConfiguration.framework */; };
+		1EE5A4A4196ECB4100BC96BC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4A3196ECB4100BC96BC /* AudioToolbox.framework */; };
+		1EE5A4A6196ECB4900BC96BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4A5196ECB4900BC96BC /* CoreGraphics.framework */; };
+		1EE5A4A8196ECB5100BC96BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4A7196ECB5100BC96BC /* CoreLocation.framework */; };
+		1EE5A4AA196ECB5C00BC96BC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4A9196ECB5C00BC96BC /* libz.dylib */; };
+		1EE5A4AC196ECB6500BC96BC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4AB196ECB6500BC96BC /* MobileCoreServices.framework */; };
+		1EE5A4AE196ECB6F00BC96BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4AD196ECB6F00BC96BC /* QuartzCore.framework */; };
+		1EE5A4B0196ECB7300BC96BC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A4AF196ECB7300BC96BC /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,18 @@
 		1E83E52C196E98A700AC88C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E83E52D196E98A700AC88C7 /* FuberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuberTests.swift; sourceTree = "<group>"; };
 		1EE5A496196EC07500BC96BC /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		1EE5A498196EC9FE00BC96BC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1EE5A49A196ECA9200BC96BC /* Fuber-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuber-Bridging-Header.h"; sourceTree = "<group>"; };
+		1EE5A49D196ECB0500BC96BC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1EE5A49F196ECB2200BC96BC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1EE5A4A1196ECB3400BC96BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1EE5A4A3196ECB4100BC96BC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1EE5A4A5196ECB4900BC96BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1EE5A4A7196ECB5100BC96BC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1EE5A4A9196ECB5C00BC96BC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1EE5A4AB196ECB6500BC96BC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1EE5A4AD196ECB6F00BC96BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1EE5A4AF196ECB7300BC96BC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE5A4B0196ECB7300BC96BC /* Security.framework in Frameworks */,
+				1EE5A4AE196ECB6F00BC96BC /* QuartzCore.framework in Frameworks */,
+				1EE5A4AC196ECB6500BC96BC /* MobileCoreServices.framework in Frameworks */,
+				1EE5A4AA196ECB5C00BC96BC /* libz.dylib in Frameworks */,
+				1EE5A4A8196ECB5100BC96BC /* CoreLocation.framework in Frameworks */,
+				1EE5A4A6196ECB4900BC96BC /* CoreGraphics.framework in Frameworks */,
+				1EE5A4A4196ECB4100BC96BC /* AudioToolbox.framework in Frameworks */,
+				1EE5A4A2196ECB3400BC96BC /* SystemConfiguration.framework in Frameworks */,
+				1EE5A4A0196ECB2200BC96BC /* StoreKit.framework in Frameworks */,
+				1EE5A49E196ECB0500BC96BC /* CFNetwork.framework in Frameworks */,
+				1EE5A499196EC9FE00BC96BC /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +97,11 @@
 		1E83E508196E98A700AC88C7 = {
 			isa = PBXGroup;
 			children = (
+				1EE5A4B1196ECBE700BC96BC /* Frameworks */,
 				1E83E513196E98A700AC88C7 /* Fuber */,
 				1E83E52A196E98A700AC88C7 /* FuberTests */,
 				1E83E512196E98A700AC88C7 /* Products */,
+				1EE5A49A196ECA9200BC96BC /* Fuber-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +152,24 @@
 				1E83E52C196E98A700AC88C7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EE5A4B1196ECBE700BC96BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EE5A498196EC9FE00BC96BC /* Parse.framework */,
+				1EE5A49D196ECB0500BC96BC /* CFNetwork.framework */,
+				1EE5A49F196ECB2200BC96BC /* StoreKit.framework */,
+				1EE5A4A1196ECB3400BC96BC /* SystemConfiguration.framework */,
+				1EE5A4A3196ECB4100BC96BC /* AudioToolbox.framework */,
+				1EE5A4A5196ECB4900BC96BC /* CoreGraphics.framework */,
+				1EE5A4A7196ECB5100BC96BC /* CoreLocation.framework */,
+				1EE5A4A9196ECB5C00BC96BC /* libz.dylib */,
+				1EE5A4AB196ECB6500BC96BC /* MobileCoreServices.framework */,
+				1EE5A4AD196ECB6F00BC96BC /* QuartzCore.framework */,
+				1EE5A4AF196ECB7300BC96BC /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,10 +391,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Fuber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fuber-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -349,10 +410,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Fuber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fuber-Bridging-Header.h";
 			};
 			name = Release;
 		};
