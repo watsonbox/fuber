@@ -73,5 +73,12 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard)
     }
 
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> NSInteger {
+        return 12
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> NSInteger {
+        return 0
+    }
 }
 
