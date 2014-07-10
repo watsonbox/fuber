@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PxF-Ax-wPy">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
@@ -16,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/fish_and_chips.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Xl-xZ-8h0">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-lc-4In">
                                 <rect key="frame" x="8" y="20" width="464" height="17"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
@@ -25,9 +29,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.31108485660000001" green="0.42956052760000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2Xl-xZ-8h0" firstAttribute="leading" secondItem="gLe-Tb-ylt" secondAttribute="leading" id="B8r-Jr-gdp"/>
+                            <constraint firstItem="a4F-Wq-f2I" firstAttribute="top" secondItem="2Xl-xZ-8h0" secondAttribute="bottom" id="O0G-Re-WzO"/>
                             <constraint firstAttribute="trailing" secondItem="i7n-lc-4In" secondAttribute="trailing" constant="8" id="WdW-Rj-aSg"/>
                             <constraint firstItem="i7n-lc-4In" firstAttribute="top" secondItem="gLe-Tb-ylt" secondAttribute="top" constant="20" symbolic="YES" id="Z9a-TM-cFj"/>
                             <constraint firstItem="i7n-lc-4In" firstAttribute="leading" secondItem="gLe-Tb-ylt" secondAttribute="leading" constant="8" id="reE-mV-FOp"/>
+                            <constraint firstItem="2Xl-xZ-8h0" firstAttribute="top" secondItem="gLe-Tb-ylt" secondAttribute="top" id="t6H-HP-kvV"/>
+                            <constraint firstAttribute="trailing" secondItem="2Xl-xZ-8h0" secondAttribute="trailing" id="yBN-YS-IxA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -57,4 +65,7 @@
             <point key="canvasLocation" x="360" y="476"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Images/fish_and_chips.jpg" width="16" height="16"/>
+    </resources>
 </document>
