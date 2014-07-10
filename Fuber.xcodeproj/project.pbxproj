@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E83E517196E98A700AC88C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E516196E98A700AC88C7 /* AppDelegate.swift */; };
+		1E83E519196E98A700AC88C7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E518196E98A700AC88C7 /* RootViewController.swift */; };
+		1E83E51B196E98A700AC88C7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E51A196E98A700AC88C7 /* DataViewController.swift */; };
+		1E83E51D196E98A700AC88C7 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E51C196E98A700AC88C7 /* ModelController.swift */; };
+		1E83E520196E98A700AC88C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E83E51E196E98A700AC88C7 /* Main.storyboard */; };
+		1E83E522196E98A700AC88C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E83E521196E98A700AC88C7 /* Images.xcassets */; };
+		1E83E52E196E98A700AC88C7 /* FuberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E52D196E98A700AC88C7 /* FuberTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E83E528196E98A700AC88C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E83E509196E98A700AC88C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E83E510196E98A700AC88C7;
+			remoteInfo = Fuber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E83E511196E98A700AC88C7 /* Fuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E83E515196E98A700AC88C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E83E516196E98A700AC88C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E83E518196E98A700AC88C7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1E83E51A196E98A700AC88C7 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		1E83E51C196E98A700AC88C7 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		1E83E51F196E98A700AC88C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E83E521196E98A700AC88C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E83E527196E98A700AC88C7 /* FuberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E83E52C196E98A700AC88C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E83E52D196E98A700AC88C7 /* FuberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuberTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E83E50E196E98A700AC88C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E83E524196E98A700AC88C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E83E508196E98A700AC88C7 = {
+			isa = PBXGroup;
+			children = (
+				1E83E513196E98A700AC88C7 /* Fuber */,
+				1E83E52A196E98A700AC88C7 /* FuberTests */,
+				1E83E512196E98A700AC88C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E83E512196E98A700AC88C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E83E511196E98A700AC88C7 /* Fuber.app */,
+				1E83E527196E98A700AC88C7 /* FuberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E83E513196E98A700AC88C7 /* Fuber */ = {
+			isa = PBXGroup;
+			children = (
+				1E83E516196E98A700AC88C7 /* AppDelegate.swift */,
+				1E83E518196E98A700AC88C7 /* RootViewController.swift */,
+				1E83E51A196E98A700AC88C7 /* DataViewController.swift */,
+				1E83E51C196E98A700AC88C7 /* ModelController.swift */,
+				1E83E51E196E98A700AC88C7 /* Main.storyboard */,
+				1E83E521196E98A700AC88C7 /* Images.xcassets */,
+				1E83E514196E98A700AC88C7 /* Supporting Files */,
+			);
+			path = Fuber;
+			sourceTree = "<group>";
+		};
+		1E83E514196E98A700AC88C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E83E515196E98A700AC88C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E83E52A196E98A700AC88C7 /* FuberTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E83E52D196E98A700AC88C7 /* FuberTests.swift */,
+				1E83E52B196E98A700AC88C7 /* Supporting Files */,
+			);
+			path = FuberTests;
+			sourceTree = "<group>";
+		};
+		1E83E52B196E98A700AC88C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E83E52C196E98A700AC88C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E83E510196E98A700AC88C7 /* Fuber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E83E531196E98A700AC88C7 /* Build configuration list for PBXNativeTarget "Fuber" */;
+			buildPhases = (
+				1E83E50D196E98A700AC88C7 /* Sources */,
+				1E83E50E196E98A700AC88C7 /* Frameworks */,
+				1E83E50F196E98A700AC88C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fuber;
+			productName = Fuber;
+			productReference = 1E83E511196E98A700AC88C7 /* Fuber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E83E526196E98A700AC88C7 /* FuberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E83E534196E98A700AC88C7 /* Build configuration list for PBXNativeTarget "FuberTests" */;
+			buildPhases = (
+				1E83E523196E98A700AC88C7 /* Sources */,
+				1E83E524196E98A700AC88C7 /* Frameworks */,
+				1E83E525196E98A700AC88C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E83E529196E98A700AC88C7 /* PBXTargetDependency */,
+			);
+			name = FuberTests;
+			productName = FuberTests;
+			productReference = 1E83E527196E98A700AC88C7 /* FuberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E83E509196E98A700AC88C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Howard Wilson";
+				TargetAttributes = {
+					1E83E510196E98A700AC88C7 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1E83E526196E98A700AC88C7 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 1E83E510196E98A700AC88C7;
+					};
+				};
+			};
+			buildConfigurationList = 1E83E50C196E98A700AC88C7 /* Build configuration list for PBXProject "Fuber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E83E508196E98A700AC88C7;
+			productRefGroup = 1E83E512196E98A700AC88C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E83E510196E98A700AC88C7 /* Fuber */,
+				1E83E526196E98A700AC88C7 /* FuberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E83E50F196E98A700AC88C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E83E520196E98A700AC88C7 /* Main.storyboard in Resources */,
+				1E83E522196E98A700AC88C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E83E525196E98A700AC88C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E83E50D196E98A700AC88C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E83E519196E98A700AC88C7 /* RootViewController.swift in Sources */,
+				1E83E51D196E98A700AC88C7 /* ModelController.swift in Sources */,
+				1E83E51B196E98A700AC88C7 /* DataViewController.swift in Sources */,
+				1E83E517196E98A700AC88C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E83E523196E98A700AC88C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E83E52E196E98A700AC88C7 /* FuberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E83E529196E98A700AC88C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E83E510196E98A700AC88C7 /* Fuber */;
+			targetProxy = 1E83E528196E98A700AC88C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E83E51E196E98A700AC88C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E83E51F196E98A700AC88C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E83E52F196E98A700AC88C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E83E530196E98A700AC88C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E83E532196E98A700AC88C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Fuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E83E533196E98A700AC88C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Fuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E83E535196E98A700AC88C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fuber.app/Fuber";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		1E83E536196E98A700AC88C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Fuber.app/Fuber";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E83E50C196E98A700AC88C7 /* Build configuration list for PBXProject "Fuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E83E52F196E98A700AC88C7 /* Debug */,
+				1E83E530196E98A700AC88C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E83E531196E98A700AC88C7 /* Build configuration list for PBXNativeTarget "Fuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E83E532196E98A700AC88C7 /* Debug */,
+				1E83E533196E98A700AC88C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E83E534196E98A700AC88C7 /* Build configuration list for PBXNativeTarget "FuberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E83E535196E98A700AC88C7 /* Debug */,
+				1E83E536196E98A700AC88C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E83E509196E98A700AC88C7 /* Project object */;
+}
