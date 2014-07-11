@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
 
-    var logInViewController = PFLogInViewController()
+    var logInViewController = LogInViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
