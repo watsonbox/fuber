@@ -57,12 +57,56 @@
                     <view key="view" contentMode="scaleToFill" id="8Gw-7l-hbm">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGn-IQ-16R">
+                                <rect key="frame" x="411" y="442" width="49" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="2yh-5v-QdS" eventType="touchUpInside" id="GQv-Pb-soH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TkM-tb-Tjx">
+                                <rect key="frame" x="183" y="120" width="115" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="SSG-Vt-n77"/>
+                                    <constraint firstAttribute="width" constant="115" id="urh-mv-ynk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to see today's menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPy-vz-BCU">
+                                <rect key="frame" x="136" y="199" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/angle-double-right.png" translatesAutoresizingMaskIntoConstraints="NO" id="eSI-wb-tJf">
+                                <rect key="frame" x="352" y="194" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="11Z-XF-YWo"/>
+                                    <constraint firstAttribute="height" constant="32" id="Z58-7T-aub"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TPy-vz-BCU" secondAttribute="centerX" id="EH6-9h-5na"/>
+                            <constraint firstItem="TPy-vz-BCU" firstAttribute="centerY" secondItem="eSI-wb-tJf" secondAttribute="centerY" id="Gsq-YV-QDc"/>
+                            <constraint firstItem="TPy-vz-BCU" firstAttribute="top" secondItem="TkM-tb-Tjx" secondAttribute="bottom" constant="20" id="JhE-LS-qeA"/>
+                            <constraint firstAttribute="centerX" secondItem="TkM-tb-Tjx" secondAttribute="centerX" id="KpY-3J-V3Z"/>
+                            <constraint firstAttribute="trailing" secondItem="wGn-IQ-16R" secondAttribute="trailing" constant="20" symbolic="YES" id="cfk-xU-htM"/>
+                            <constraint firstItem="TkM-tb-Tjx" firstAttribute="top" secondItem="QZn-bR-Rdd" secondAttribute="bottom" constant="100" id="eyG-9o-CGs"/>
+                            <constraint firstItem="eSI-wb-tJf" firstAttribute="leading" secondItem="TPy-vz-BCU" secondAttribute="trailing" constant="8" symbolic="YES" id="haS-pf-L7C"/>
+                            <constraint firstItem="Jjw-kR-Qha" firstAttribute="top" secondItem="wGn-IQ-16R" secondAttribute="bottom" constant="20" symbolic="YES" id="m70-zv-iYd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoImage" destination="TkM-tb-Tjx" id="g0A-zn-aAV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHX-4c-QGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997" y="815"/>
+            <point key="canvasLocation" x="997" y="806"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="3GU-QQ-JyJ">
@@ -84,6 +128,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Images/angle-double-right.png" width="16" height="16"/>
         <image name="Images/fish_and_chips.jpg" width="16" height="16"/>
+        <image name="Images/logo.png" width="16" height="16"/>
     </resources>
 </document>

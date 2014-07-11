@@ -11,17 +11,20 @@ import UIKit
 class HomeViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
 
     var logInViewController = LogInViewController()
+    @IBOutlet var logoImage: UIImageView
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (!PFUser.currentUser()) {
-            buildLoginView()
-        }
+        buildLoginView()
+        
+        // Show the login if there is no current user
+        showLogin(show: !PFUser.currentUser())
     }
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)    }
+        super.viewDidAppear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,8 +45,17 @@ class HomeViewController: UIViewController, PFLogInViewControllerDelegate, PFSig
         logInViewController.didMoveToParentViewController(self)
     }
     
-    func showLogin(show : Bool = true) {
-        UIView.animateWithDuration(1, animations: { self.logInViewController.view.alpha = show ? 1 : 0 })
+    func showLogin(show : Bool = true, animate : Bool = false) {
+        if (animate) {
+            UIView.animateWithDuration(1, animations: { self.logInViewController.view.alpha = show ? 1 : 0 })
+        } else {
+            self.logInViewController.view.alpha = show ? 1 : 0
+        }
+    }
+    
+    @IBAction func logout(sender: AnyObject) {
+        PFUser.logOut()
+        showLogin(show: true, animate: true)
     }
 
     /*
@@ -57,6 +69,8 @@ class HomeViewController: UIViewController, PFLogInViewControllerDelegate, PFSig
     */
     
     func logInViewController(logInController: PFLogInViewController!, didLogInUser user: PFUser!) {
-        showLogin(show: false)
+        showLogin(show: false, animate: true)
+        (logInController.view as PFLogInView).usernameField.text = ""
+        (logInController.view as PFLogInView).passwordField.text = ""
     }
 }

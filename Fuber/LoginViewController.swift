@@ -15,4 +15,10 @@ class LogInViewController: PFLogInViewController {
         self.logInView.dismissButton.hidden = true
         self.logInView.logo = UIImageView(image: UIImage(named: "Images/logo.png"))
     }
+    
+    override func viewDidLayoutSubviews() {
+        // Set logo to fixed position from top of page
+        var loginLogo = (view as PFLogInView).logo
+        loginLogo.frame = CGRectMake(loginLogo.frame.origin.x, 122, loginLogo.frame.width, loginLogo.frame.height)
+    }
 }
