@@ -61,5 +61,10 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
     }
 
     var _modelController: ModelController? = nil
+    
+    // Note: According to the Apple mailing lists, this method should return UIInterfaceOrientationMask and will be fixed
+    override func supportedInterfaceOrientations() -> Int {
+        return UIInterfaceOrientationMask.Portrait.value.asSigned()
+    }
 }
 
