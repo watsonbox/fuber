@@ -19,11 +19,12 @@ import UIKit
 
 
 class ModelController: NSObject, UIPageViewControllerDataSource {
-                            
     var pageData = NSArray()
+    var rootViewController: RootViewController
 
-
-    init() {
+    init(rootViewController : RootViewController) {
+        self.rootViewController = rootViewController
+        
         super.init()
         
         // Create the data model - build some test data for now
@@ -48,6 +49,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
             // Create a new data view controller and pass suitable data.
             let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as DataViewController
             dataViewController.dataObject = self.pageData[index-1]
+            dataViewController.rootViewController = rootViewController
             return dataViewController
         }
     }

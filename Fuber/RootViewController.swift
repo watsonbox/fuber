@@ -24,7 +24,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
 
         self.pageViewController!.dataSource = self.modelController
-
+        
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController!.view)
 
@@ -55,7 +55,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         // Return the model controller object, creating it if necessary.
         // In more complex implementations, the model controller may be passed to the view controller.
         if !_modelController {
-            _modelController = ModelController()
+            _modelController = ModelController(rootViewController: self)
         }
         return _modelController!
     }
@@ -65,6 +65,10 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
     // Note: According to the Apple mailing lists, this method should return UIInterfaceOrientationMask and will be fixed
     override func supportedInterfaceOrientations() -> Int {
         return UIInterfaceOrientationMask.Portrait.value.asSigned()
+    }
+    
+    func backToHomePage() {
+        pageViewController!.setViewControllers([modelController.viewControllerAtIndex(0, storyboard: self.storyboard)!], direction: .Reverse, animated: false, completion: nil)
     }
 }
 

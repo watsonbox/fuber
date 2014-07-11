@@ -12,6 +12,7 @@ class DataViewController: UIViewController {
                             
     @IBOutlet var dataLabel: UILabel
     var dataObject: AnyObject?
+    var rootViewController: RootViewController?
     @IBOutlet var mealImage: UIImageView
 
     override func viewDidLoad() {
@@ -37,6 +38,12 @@ class DataViewController: UIViewController {
         }
     }
 
-
+    @IBAction func orderMeal(sender: AnyObject) {
+        if (PFUser.currentUser()) {
+            UIAlertView(title: "Order", message: "Not Implemented", delegate: nil, cancelButtonTitle: "Okay").show()
+        } else {
+            // When not logged in, show the login screen
+            rootViewController!.backToHomePage()
+        }
+    }
 }
-
