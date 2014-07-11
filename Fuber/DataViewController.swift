@@ -12,7 +12,7 @@ class DataViewController: UIViewController {
                             
     @IBOutlet var dataLabel: UILabel
     var dataObject: AnyObject?
-
+    @IBOutlet var mealImage: UIImageView
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +26,14 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if let obj: AnyObject = dataObject {
-            self.dataLabel!.text = obj.description
+        
+        if let obj: PFObject = dataObject as? PFObject {
+            self.dataLabel!.text = obj["name"].description
+            var image = obj["image"].description
+            self.mealImage.image = UIImage(named: "Images/\(image)")
         } else {
             self.dataLabel!.text = ""
+            self.mealImage.image = nil
         }
     }
 

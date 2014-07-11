@@ -21,25 +21,46 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-lc-4In">
-                                <rect key="frame" x="8" y="20" width="464" height="17"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="20" y="40" width="440" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rmj-8v-ubH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNq-sR-b8R">
+                                <rect key="frame" x="390" y="400" width="70" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5Jo-fR-CS5"/>
+                                    <constraint firstAttribute="height" constant="40" id="5nu-tw-zQJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31108485660000001" green="0.42956052760000002" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="i7n-lc-4In" firstAttribute="leading" secondItem="gLe-Tb-ylt" secondAttribute="leading" constant="20" symbolic="YES" id="A24-N9-A9e"/>
                             <constraint firstItem="2Xl-xZ-8h0" firstAttribute="leading" secondItem="gLe-Tb-ylt" secondAttribute="leading" id="B8r-Jr-gdp"/>
+                            <constraint firstItem="a4F-Wq-f2I" firstAttribute="top" secondItem="sNq-sR-b8R" secondAttribute="bottom" constant="40" id="Cnf-AJ-vtI"/>
+                            <constraint firstAttribute="trailing" secondItem="sNq-sR-b8R" secondAttribute="trailing" constant="20" symbolic="YES" id="Idw-mh-GGY"/>
                             <constraint firstItem="a4F-Wq-f2I" firstAttribute="top" secondItem="2Xl-xZ-8h0" secondAttribute="bottom" id="O0G-Re-WzO"/>
-                            <constraint firstAttribute="trailing" secondItem="i7n-lc-4In" secondAttribute="trailing" constant="8" id="WdW-Rj-aSg"/>
-                            <constraint firstItem="i7n-lc-4In" firstAttribute="top" secondItem="gLe-Tb-ylt" secondAttribute="top" constant="20" symbolic="YES" id="Z9a-TM-cFj"/>
-                            <constraint firstItem="i7n-lc-4In" firstAttribute="leading" secondItem="gLe-Tb-ylt" secondAttribute="leading" constant="8" id="reE-mV-FOp"/>
+                            <constraint firstItem="i7n-lc-4In" firstAttribute="top" secondItem="6LC-1I-4vP" secondAttribute="bottom" constant="20" id="WFK-Sm-BJi"/>
+                            <constraint firstAttribute="trailing" secondItem="i7n-lc-4In" secondAttribute="trailing" constant="20" symbolic="YES" id="WdW-Rj-aSg"/>
+                            <constraint firstAttribute="trailing" secondItem="i7n-lc-4In" secondAttribute="trailing" constant="20" symbolic="YES" id="jF1-kR-Zsj"/>
                             <constraint firstItem="2Xl-xZ-8h0" firstAttribute="top" secondItem="gLe-Tb-ylt" secondAttribute="top" id="t6H-HP-kvV"/>
                             <constraint firstAttribute="trailing" secondItem="2Xl-xZ-8h0" secondAttribute="trailing" id="yBN-YS-IxA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dataLabel" destination="i7n-lc-4In" id="8Kj-KN-eO6"/>
+                        <outlet property="mealImage" destination="2Xl-xZ-8h0" id="kKx-TR-ckZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHE-GN-Yf3" sceneMemberID="firstResponder"/>

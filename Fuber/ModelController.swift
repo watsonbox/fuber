@@ -25,25 +25,29 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
     init() {
         super.init()
-        // Create the data model.
-        let dateFormatter = NSDateFormatter()
-        pageData = dateFormatter.monthSymbols
+        
+        // Create the data model - build some test data for now
+        var fishAndChips = PFObject(className: "Meal")
+        fishAndChips["name"] = "Fish and Chips"
+        fishAndChips["image"] = "fish_and_chips.jpg"
+        
+        var cottagePie = PFObject(className: "Meal")
+        cottagePie["name"] = "Caesar Salad"
+        cottagePie["image"] = "caesar_salad.jpg"
+        
+        pageData = [fishAndChips, cottagePie]
     }
 
     func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> UIViewController? {
         // Return the data view controller for the given index.
-        if (self.pageData.count == 0) || (index >= self.pageData.count) {
-            return nil
-        }
-
-        if (index == 0) {
+        if (self.pageData.count == 0) || (index >= self.pageData.count + 1 || index == 0) {
             // Create a home view controller
             let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as HomeViewController
             return homeViewController
         } else {
             // Create a new data view controller and pass suitable data.
             let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as DataViewController
-            dataViewController.dataObject = self.pageData[index]
+            dataViewController.dataObject = self.pageData[index-1]
             return dataViewController
         }
     }
@@ -54,7 +58,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         if (viewController is HomeViewController) {
             return 0
         } else {
-            return self.pageData.indexOfObject((viewController as DataViewController).dataObject)
+            return self.pageData.indexOfObject((viewController as DataViewController).dataObject) + 1
         }
     }
 
@@ -77,14 +81,14 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
         
         index++
-        if index == self.pageData.count {
+        if index == self.pageData.count + 1 {
             return nil
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard)
     }
 
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> NSInteger {
-        return 12
+        return pageData.count + 1
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> NSInteger {
