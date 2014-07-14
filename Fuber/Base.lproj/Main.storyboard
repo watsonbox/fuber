@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/fish_and_chips.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Xl-xZ-8h0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/powered.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Xl-xZ-8h0">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-lc-4In">
@@ -82,25 +82,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXC-5H-rDy" customClass="STPView">
-                                <rect key="frame" x="95" y="28" width="290" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="M3L-uV-93w"/>
-                                    <constraint firstAttribute="height" constant="55" id="jad-v1-gOZ"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpq-qq-56X">
-                                <rect key="frame" x="20" y="442" width="48" height="30"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancel:" destination="PRy-Mx-J2x" eventType="touchUpInside" id="ZDu-wu-H4e"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-a7-jJN">
-                                <rect key="frame" x="345" y="442" width="115" height="30"/>
+                                <rect key="frame" x="312" y="262" width="148" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Confirm and Pay">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -108,16 +92,51 @@
                                     <action selector="pay:" destination="PRy-Mx-J2x" eventType="touchUpInside" id="ibl-wg-ChY"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXC-5H-rDy" customClass="STPView">
+                                <rect key="frame" x="95" y="122" width="290" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="M3L-uV-93w"/>
+                                    <constraint firstAttribute="height" constant="55" id="jad-v1-gOZ"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/powered.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mgo-U5-JFH">
+                                <rect key="frame" x="150" y="185" width="180" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="FAA-1M-XLu"/>
+                                    <constraint firstAttribute="height" constant="27" id="MUS-cB-12X"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Credit Card Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-ev-9bB">
+                                <rect key="frame" x="140" y="50" width="200" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpq-qq-56X">
+                                <rect key="frame" x="20" y="262" width="62" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="PRy-Mx-J2x" eventType="touchUpInside" id="ZDu-wu-H4e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Z7c-dX-Lk4" firstAttribute="top" secondItem="Rpq-qq-56X" secondAttribute="bottom" constant="20" symbolic="YES" id="DpN-J5-9Gm"/>
-                            <constraint firstItem="Z7c-dX-Lk4" firstAttribute="top" secondItem="Q01-a7-jJN" secondAttribute="bottom" constant="20" symbolic="YES" id="HIL-iX-lGH"/>
+                            <constraint firstItem="Q01-a7-jJN" firstAttribute="top" secondItem="Mgo-U5-JFH" secondAttribute="bottom" constant="50" id="42a-bZ-Cqm"/>
+                            <constraint firstAttribute="centerX" secondItem="Mgo-U5-JFH" secondAttribute="centerX" id="CtZ-tj-eX6"/>
                             <constraint firstItem="Rpq-qq-56X" firstAttribute="leading" secondItem="83k-E0-eXd" secondAttribute="leading" constant="20" symbolic="YES" id="Ptw-dS-cEf"/>
+                            <constraint firstItem="J7H-ev-9bB" firstAttribute="top" secondItem="83k-E0-eXd" secondAttribute="top" constant="50" id="WHc-mp-cIp"/>
+                            <constraint firstItem="HXC-5H-rDy" firstAttribute="top" secondItem="J7H-ev-9bB" secondAttribute="bottom" constant="50" id="ZP9-by-dAg"/>
                             <constraint firstAttribute="trailing" secondItem="Q01-a7-jJN" secondAttribute="trailing" constant="20" symbolic="YES" id="ahs-Lf-nZZ"/>
+                            <constraint firstItem="Rpq-qq-56X" firstAttribute="top" secondItem="Mgo-U5-JFH" secondAttribute="bottom" constant="50" id="ds1-lX-KnP"/>
                             <constraint firstAttribute="centerX" secondItem="HXC-5H-rDy" secondAttribute="centerX" id="g01-AC-dOI"/>
-                            <constraint firstItem="HXC-5H-rDy" firstAttribute="top" secondItem="T9v-UV-iB8" secondAttribute="bottom" constant="20" symbolic="YES" id="vwF-Cg-nH6"/>
+                            <constraint firstAttribute="centerX" secondItem="J7H-ev-9bB" secondAttribute="centerX" id="gCu-if-bxd"/>
+                            <constraint firstItem="Mgo-U5-JFH" firstAttribute="top" secondItem="HXC-5H-rDy" secondAttribute="bottom" constant="8" symbolic="YES" id="npM-9O-Xna"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="SzR-Fc-o5b" appends="YES" id="SFS-69-l2h"/>
@@ -220,7 +239,7 @@
     </scenes>
     <resources>
         <image name="Images/angle-double-right.png" width="16" height="16"/>
-        <image name="Images/fish_and_chips.jpg" width="128" height="128"/>
         <image name="Images/logo.png" width="16" height="16"/>
+        <image name="Images/powered.png" width="128" height="128"/>
     </resources>
 </document>

@@ -30,6 +30,7 @@ class PaymentViewController : UIViewController, STPViewDelegate, UIAlertViewDele
     }
     
     @IBAction func cancel(sender: AnyObject) {
+        stripeCardView.paymentView.resignFirstResponder()
         presentingViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     
