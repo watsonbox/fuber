@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PxF-Ax-wPy">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
@@ -98,14 +99,18 @@
                                     <action selector="cancel:" destination="PRy-Mx-J2x" eventType="touchUpInside" id="ZDu-wu-H4e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-a7-jJN">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-a7-jJN">
                                 <rect key="frame" x="345" y="442" width="115" height="30"/>
                                 <state key="normal" title="Confirm and Pay">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pay:" destination="PRy-Mx-J2x" eventType="touchUpInside" id="ibl-wg-ChY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Z7c-dX-Lk4" firstAttribute="top" secondItem="Rpq-qq-56X" secondAttribute="bottom" constant="20" symbolic="YES" id="DpN-J5-9Gm"/>
                             <constraint firstItem="Z7c-dX-Lk4" firstAttribute="top" secondItem="Q01-a7-jJN" secondAttribute="bottom" constant="20" symbolic="YES" id="HIL-iX-lGH"/>
@@ -114,12 +119,21 @@
                             <constraint firstAttribute="centerX" secondItem="HXC-5H-rDy" secondAttribute="centerX" id="g01-AC-dOI"/>
                             <constraint firstItem="HXC-5H-rDy" firstAttribute="top" secondItem="T9v-UV-iB8" secondAttribute="bottom" constant="20" symbolic="YES" id="vwF-Cg-nH6"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SzR-Fc-o5b" appends="YES" id="SFS-69-l2h"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="payButton" destination="Q01-a7-jJN" id="vFh-uI-hlR"/>
                         <outlet property="stripeCardView" destination="HXC-5H-rDy" id="C5h-l4-zgW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l00-W2-Fm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SzR-Fc-o5b">
+                    <connections>
+                        <action selector="viewTapped:" destination="PRy-Mx-J2x" id="CGS-hd-4WK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1534" y="258"/>
         </scene>
@@ -206,7 +220,7 @@
     </scenes>
     <resources>
         <image name="Images/angle-double-right.png" width="16" height="16"/>
-        <image name="Images/fish_and_chips.jpg" width="16" height="16"/>
+        <image name="Images/fish_and_chips.jpg" width="128" height="128"/>
         <image name="Images/logo.png" width="16" height="16"/>
     </resources>
 </document>
