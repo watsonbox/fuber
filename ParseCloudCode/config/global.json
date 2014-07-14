@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "Fuber": {
+            "applicationId": "eWusXbtsAocfuQRyKdgFzCQqqYvunAyikDz7axNO", 
+            "masterKey": "qu7fI170MrfDq0eECcwBbOAJ9WQhDcGXXHkfbUOj"
+        }, 
+        "_default": {
+            "link": "Fuber"
+        }
+    }
+}
