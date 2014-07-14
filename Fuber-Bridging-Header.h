@@ -5,3 +5,4 @@
 #import <Parse/Parse.h>
 #import "Stripe/Stripe.h"
 #import "Stripe/STPView.h"
+#import "MBProgressHUD.h"

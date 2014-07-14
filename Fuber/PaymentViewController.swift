@@ -33,9 +33,8 @@ class PaymentViewController : UIViewController, STPViewDelegate, UIAlertViewDele
         presentingViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     @IBAction func pay(sender: AnyObject) {
-        // TODO: Show progress HUD
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
         stripeCardView.createToken { (token: STPToken!, error: NSError!) in
             if (error) {
@@ -44,10 +43,6 @@ class PaymentViewController : UIViewController, STPViewDelegate, UIAlertViewDele
                 self.hasToken(token)
             }
         }
-    }
-    
-    func hasError(message: String) {
-        UIAlertView(title: "Error", message: message, delegate: nil, cancelButtonTitle: "Okay").show()
     }
     
     func hasToken(token: STPToken!) {
@@ -61,7 +56,13 @@ class PaymentViewController : UIViewController, STPViewDelegate, UIAlertViewDele
         }
     }
     
+    func hasError(message: String) {
+        MBProgressHUD.hideHUDForView(self.view, animated: true)
+        UIAlertView(title: "Error", message: message, delegate: nil, cancelButtonTitle: "Okay").show()
+    }
+    
     func successfulPayment() {
+        MBProgressHUD.hideHUDForView(self.view, animated: true)
         UIAlertView(title: "Success", message: "Your card was successfully charged", delegate: self, cancelButtonTitle: "Okay").show()
     }
     

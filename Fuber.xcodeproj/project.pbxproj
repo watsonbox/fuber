@@ -53,6 +53,7 @@
 		1EA430B11973E3150076A79A /* STPaymentLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EA430911973E3150076A79A /* STPaymentLocalizable.strings */; };
 		1EA430B21973E3150076A79A /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EA430931973E3150076A79A /* textfield.png */; };
 		1EA430B31973E3150076A79A /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EA430941973E3150076A79A /* textfield@2x.png */; };
+		1EA430B7197436430076A79A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA430B6197436430076A79A /* MBProgressHUD.m */; };
 		1EE5A497196EC07500BC96BC /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5A496196EC07500BC96BC /* Images */; };
 		1EE5A499196EC9FE00BC96BC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A498196EC9FE00BC96BC /* Parse.framework */; };
 		1EE5A49E196ECB0500BC96BC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5A49D196ECB0500BC96BC /* CFNetwork.framework */; };
@@ -149,6 +150,8 @@
 		1EA430921973E3150076A79A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/STPaymentLocalizable.strings; sourceTree = "<group>"; };
 		1EA430931973E3150076A79A /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
 		1EA430941973E3150076A79A /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
+		1EA430B5197436430076A79A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1EA430B6197436430076A79A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		1EE5A496196EC07500BC96BC /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		1EE5A498196EC9FE00BC96BC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		1EE5A49A196ECA9200BC96BC /* Fuber-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuber-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -356,9 +359,19 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		1EA430B4197436430076A79A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1EA430B5197436430076A79A /* MBProgressHUD.h */,
+				1EA430B6197436430076A79A /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		1EE5A4B1196ECBE700BC96BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EA430B4197436430076A79A /* MBProgressHUD */,
 				1EA430671973E3140076A79A /* PaymentKit */,
 				1EA42FC319733D1F0076A79A /* Stripe */,
 				1EE5A4BA196ED79700BC96BC /* Accounts.framework */,
@@ -503,6 +516,7 @@
 			files = (
 				1E1412A3197024FB004D6692 /* PaymentViewController.swift in Sources */,
 				1E9BFB43196F53B800CBFECA /* LoginViewController.swift in Sources */,
+				1EA430B7197436430076A79A /* MBProgressHUD.m in Sources */,
 				1EE5A4B5196ED19B00BC96BC /* HomeViewController.swift in Sources */,
 				1E83E519196E98A700AC88C7 /* RootViewController.swift in Sources */,
 				1E83E51D196E98A700AC88C7 /* ModelController.swift in Sources */,
