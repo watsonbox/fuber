@@ -68,7 +68,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController)
-        if (index == 0) || (index == NSNotFound) {
+        if (index == 0) || (index == Foundation.NSNotFound) {
             return nil
         }
         
@@ -78,7 +78,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController)
-        if index == NSNotFound {
+        if index == Foundation.NSNotFound {
             return nil
         }
         
