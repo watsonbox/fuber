@@ -69,6 +69,60 @@
             </objects>
             <point key="canvasLocation" x="997" y="258"/>
         </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="eec-gx-laR">
+            <objects>
+                <viewController storyboardIdentifier="PaymentViewController" id="PRy-Mx-J2x" userLabel="Payment View Controller" customClass="PaymentViewController" customModule="Fuber" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T9v-UV-iB8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z7c-dX-Lk4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="83k-E0-eXd">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXC-5H-rDy" customClass="STPView">
+                                <rect key="frame" x="95" y="28" width="290" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="M3L-uV-93w"/>
+                                    <constraint firstAttribute="height" constant="55" id="jad-v1-gOZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpq-qq-56X">
+                                <rect key="frame" x="20" y="442" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="PRy-Mx-J2x" eventType="touchUpInside" id="ZDu-wu-H4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-a7-jJN">
+                                <rect key="frame" x="345" y="442" width="115" height="30"/>
+                                <state key="normal" title="Confirm and Pay">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z7c-dX-Lk4" firstAttribute="top" secondItem="Rpq-qq-56X" secondAttribute="bottom" constant="20" symbolic="YES" id="DpN-J5-9Gm"/>
+                            <constraint firstItem="Z7c-dX-Lk4" firstAttribute="top" secondItem="Q01-a7-jJN" secondAttribute="bottom" constant="20" symbolic="YES" id="HIL-iX-lGH"/>
+                            <constraint firstItem="Rpq-qq-56X" firstAttribute="leading" secondItem="83k-E0-eXd" secondAttribute="leading" constant="20" symbolic="YES" id="Ptw-dS-cEf"/>
+                            <constraint firstAttribute="trailing" secondItem="Q01-a7-jJN" secondAttribute="trailing" constant="20" symbolic="YES" id="ahs-Lf-nZZ"/>
+                            <constraint firstAttribute="centerX" secondItem="HXC-5H-rDy" secondAttribute="centerX" id="g01-AC-dOI"/>
+                            <constraint firstItem="HXC-5H-rDy" firstAttribute="top" secondItem="T9v-UV-iB8" secondAttribute="bottom" constant="20" symbolic="YES" id="vwF-Cg-nH6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stripeCardView" destination="HXC-5H-rDy" id="C5h-l4-zgW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l00-W2-Fm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="258"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="Jkx-hQ-Rqc">
             <objects>

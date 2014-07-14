@@ -40,7 +40,8 @@ class DataViewController: UIViewController {
 
     @IBAction func orderMeal(sender: AnyObject) {
         if (PFUser.currentUser()) {
-            UIAlertView(title: "Order", message: "Not Implemented", delegate: nil, cancelButtonTitle: "Okay").show()
+            let paymentViewController = storyboard.instantiateViewControllerWithIdentifier("PaymentViewController") as PaymentViewController
+            presentViewController(paymentViewController, animated: true, completion: nil)
         } else {
             // When not logged in, show the login screen
             rootViewController!.backToHomePage()
